@@ -1,0 +1,58 @@
+.container{
+    background-color: #121212;
+    height: 100vh;
+}
+.heading {
+    text-align: center;
+    color: rgb(255, 255, 255, 0.7);
+    padding-top: 3%;
+}
+.box_heading{
+    text-align: center;
+    color: rgb(255, 255, 255, 0.7);
+padding-top: 3%;
+}
+.box_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 37%;
+    margin-top: 3%;
+}
+.box{
+   background-color: #757575;
+    border: 1px solid rgb(255 255 255);
+    border-radius: 1rem;
+    width: 30%;
+    height: 100%;
+    color: rgb(255, 255, 255, 0.7);
+    
+}
+.skills{
+    text-align: center;
+    font-size:xxx-large;
+    color: rgb(255, 255, 255, 0.7);
+}
+.icons{
+     display: flex;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    gap: 3%;
+    flex-wrap: wrap;
+
+}
+.icon{
+    width: 110px;
+    height: 20%;
+    border:1px solid rgb(255, 255, 255, 0.7) ;   
+    border-radius: 9999px;
+    margin-bottom: 5%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}

@@ -1,0 +1,38 @@
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    color: aliceblue;
+     display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-left: 10%;
+}
+.intro{
+    font-weight: 600;
+  font-size: 4em;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.intro_para{
+     margin-top: 10px;
+  font-size: 1.2em;
+}
+.myimg img{
+  height: 400px;
+  width: 400px;
+  
+}
+.myimg{
+  
+  border: 15px solid red;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
