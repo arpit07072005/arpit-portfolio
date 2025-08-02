@@ -1,0 +1,85 @@
+.main_container{
+    background-color: #121212;
+}
+.heading{
+    text-align: center;
+    color: rgb(255, 255, 255, 0.7);
+    padding-top: 3%;
+    font-size: xx-large;
+}
+.para{
+     margin-top: 3%;
+     text-align: center;
+    color: aliceblue;
+}
+.container{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+        padding-left: 8%;
+}
+.left{
+    width:35rem;
+     border: 1px solid rgb(255 255 255);
+    border-radius: .75rem;
+    min-height: 40vh;
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+.input{
+    width: 100%;
+    height: 20%;
+    border-radius: 2rem;
+    margin-bottom: 5%;
+    padding: 1%;
+    padding-left: 4%;
+}
+label{
+text-align: left;
+margin-bottom: 2%;
+}
+textarea{
+    margin-bottom: 5%;
+    border-radius: 0.9rem;
+    padding: 2%;
+}
+.sendbtn{
+     width: 100%;
+    height: 20%;
+    border-radius: 2rem;
+    margin-bottom: 5%;
+    background-color: blue;
+}
+.right{
+    width:35rem;
+     border: 1px solid rgb(255 255 255);
+    border-radius: .75rem;
+    min-height: 40vh;
+    background-color: #757575;
+    padding: 3%;
+text-align: left;
+
+}
+.right_para{
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+.right_parab{
+    margin-top: 8%;
+}
+.right_links{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-bottom: 3%;
+}
+.right_heading{
+    margin-top: 10%;
+}

@@ -9,6 +9,7 @@
   position: fixed;
   top: 3%;
   left: 1%;
+  z-index: 1000;
 }
 .links{
     background-color: rgb(55, 65, 81 ,0.7);

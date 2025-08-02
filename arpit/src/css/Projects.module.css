@@ -1,0 +1,40 @@
+.container{
+    background-color: #121212;
+    /* height: 50vh; */
+        padding-left: 8%;
+padding-top: 5%;
+}
+.heading{
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+.para{
+    margin-top: 3%;
+     text-align: center;
+    color: aliceblue;
+}
+.box_container{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 250px;
+    height: 200px;
+    background-color: #757575;
+    border: 1px solid rgb(255 255 255);
+    border-radius: .75rem;
+margin-bottom: 5%;
+}
+.box_heading{
+    text-align: center;
+    margin-top: 2%;
+}
+.box_para{
+     text-align: center;
+    margin-top: 2%;
+}
