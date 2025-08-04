@@ -1,9 +1,7 @@
 import React from 'react'
-import { Instagram,Linkedin,GithubIcon, House, CircleUserRound, BookOpen, Laptop, Send} from 'lucide-react'
+import {Linkedin,GithubIcon, House, CircleUserRound, BookOpen, Laptop, Send} from 'lucide-react'
 
-
-
-
+import { TbBrandLeetcode } from "react-icons/tb";
 
 import styles from '../css/Navbar.module.css'
 function Navbar() {
@@ -21,9 +19,9 @@ function Navbar() {
 <Send color='white' size='36px' strokeWidth='1.5px'/>
         </div>
         <div className={styles.media}>
-<GithubIcon color='white' size='26px' strokeWidth='1.5px'/>
-<Linkedin color='white' size='26px' strokeWidth='1.5px'/>
-<Instagram color='white' size='26px' strokeWidth='1.5px'/>
+ <div><a href="https://github.com/arpit07072005" target='_blank'><GithubIcon color='white' size='26px' strokeWidth='1.5px'/></a></div>
+<div><a href="https://linkedin.com/in/arpit-pandey-979969301" target='_blank'><Linkedin color='white' size='26px' strokeWidth='1.5px'/></a></div>
+<div><a href="https://leetcode.com/u/arpitpandey07072005/" target='_blank'><TbBrandLeetcode  color='rgb(255, 161, 22)' size='26px' strokeWidth='2px'/></a></div>
 
 
 

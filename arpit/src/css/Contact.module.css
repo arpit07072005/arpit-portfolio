@@ -1,5 +1,6 @@
 .main_container{
     background-color: #121212;
+    color: aliceblue;
 }
 .heading{
     text-align: center;
@@ -56,6 +57,11 @@ textarea{
     border-radius: 2rem;
     margin-bottom: 5%;
     background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    color: aliceblue;
 }
 .right{
     width:35rem;
@@ -82,4 +88,8 @@ text-align: left;
 }
 .right_heading{
     margin-top: 10%;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
 }
