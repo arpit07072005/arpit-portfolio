@@ -1,16 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from '../css/Contact.module.css'
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { LuSend } from "react-icons/lu";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger);
 function Contact() {
+   const leftRef = useRef(null);
+
+  useEffect(() => {
+  const animation = gsap.from(leftRef.current, {
+    scrollTrigger: {
+      trigger: leftRef.current,
+      start: 'top 80%',
+      toggleActions: "play reverse play reverse",
+    },
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    ease: 'power3.out',
+  });
+
+  return () => {
+    animation.scrollTrigger?.kill();
+    animation.kill();
+  };
+}, []);
+
   return (
-    <div className={styles.main_container}>
+    <div className={styles.main_container} id='contact'>
         <h1 className={styles.heading}>Get in Touch</h1>
         <p className={styles.para}>Have a project in mind? Let's discuss how we can work together.</p>
-        <div className={styles.container}>
-        <div className={styles.left}>
+        <div className={styles.container }ref={leftRef}>
+        <div className={styles.left} >
             <label htmlFor="name">Name</label>
             <input type="text"  className={styles.input} placeholder='Your name'/>
               <label htmlFor="email">Email</label>

@@ -4,7 +4,7 @@ import {Linkedin,GithubIcon, House, CircleUserRound, BookOpen, Laptop, Send} fro
 import { TbBrandLeetcode } from "react-icons/tb";
 
 import styles from '../css/Navbar.module.css'
-function Navbar() {
+function Navbar( {scrolltoTrigger,scrolltohero,scrolltoskills,scrolltoproject}) {
   return (
     <div>
       <div className={styles.container}>
@@ -12,11 +12,11 @@ function Navbar() {
              <img src="\logo-rm.png" alt="" height="100px" />
         </div>
         <div className={styles.links}>
-<House  color='white' size='36px' strokeWidth='1.5px'/>
-<CircleUserRound  color='white' size='36px' strokeWidth='1.5px'/>
-<BookOpen  color='white' size='36px' strokeWidth='1.5px'/>
-<Laptop color='white' size='36px' strokeWidth='1.5px'/>
-<Send color='white' size='36px' strokeWidth='1.5px'/>
+<House  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltohero}/>
+<CircleUserRound  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoTrigger}/>
+<BookOpen  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoproject}/>
+<Laptop color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoskills}/>
+<Send color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoTrigger} />
         </div>
         <div className={styles.media}>
  <div><a href="https://github.com/arpit07072005" target='_blank'><GithubIcon color='white' size='26px' strokeWidth='1.5px'/></a></div>
