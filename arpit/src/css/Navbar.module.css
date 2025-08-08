@@ -17,7 +17,8 @@
     flex-direction: column;
     gap: 30px;
     border-radius: 9999px;
-    padding: 18% 12%
+    padding: 18% 12%;
+    cursor: pointer;
 }
 .media{
     display: flex;

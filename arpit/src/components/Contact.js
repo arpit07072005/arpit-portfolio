@@ -46,7 +46,7 @@ function Contact() {
         <div className={styles.right}>
           <h3 className={styles.right_heading}>Let's Connect</h3>
           <p className={styles.right_para}>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-          <div className={styles.right_links}><HiOutlineMail  color='blue' size='25px' strokeWidth='1.5px' /><a href="/">arpitpandey07072005@gmail.com</a></div>
+          <div className={styles.right_links}><HiOutlineMail  color='blue' size='25px' strokeWidth='1.5px' /><a href="mailto:arpitpandey07072005@gmail.com">arpitpandey07072005@gmail.com</a></div>
           <div className={styles.right_links}><FaGithub color='blue' size='25px' strokeWidth='1.5px'/><a href="https://github.com/arpit07072005" target='_blank'>github.com/arpit07072005</a></div>
           <div className={styles.right_links}><FiLinkedin color='blue' size='25px' strokeWidth='1.5px'/><a href="https://linkedin.com/in/arpit-pandey-979969301" target='_blank'>linkedin.com/in/arpit-pandey-979969301</a></div>
           <p className={styles.right_parab}>Feel free to reach out through the form or directly via email. I'll get back to you as soon as possible.</p>
