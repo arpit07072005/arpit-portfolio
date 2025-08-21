@@ -1,0 +1,75 @@
+.achivements{
+    background-color: #121212;
+    padding-left: 5%;
+}
+.achivements{
+    text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+}
+.container{
+    margin-top: 5%;
+     position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15%;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: gray;
+}
+.cards{
+     position: relative;
+  width: 42%;
+  padding: 20px;
+  min-height: 200px;
+  background-color: #1f293780;
+  margin-bottom: 2%;
+  border-radius: 3%;
+}
+.left{
+    align-self: flex-start; 
+    text-align: left;
+}
+.right{
+ align-self: flex-end; 
+  text-align: left;   
+}
+
+.dot1, .dot2,.dot3,.dot4{
+  position: absolute;
+  top: 10%;
+  left: -250%;
+  width: 20px;
+  height: 20px;
+  background-color: #757575 ;
+  border-radius: 50%;
+}
+.dot2{
+ top: 35%; 
+}
+.dot3{
+  top: 60%;
+}
+.dot4{
+  top: 85%;
+}
+.cardhead{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+.org{
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+.carddis{
+  font-size: 1rem;
+}
