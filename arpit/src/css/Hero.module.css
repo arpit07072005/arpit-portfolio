@@ -42,7 +42,9 @@
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
 }
-
+span{
+color: rgb(59 130 246);
+}
 .intro_para {
   font-size: 1.1rem;
   line-height: 1.6;

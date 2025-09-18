@@ -105,7 +105,7 @@ function Hero() {
     />
       <div className={styles.content}>
         <div className={styles.left}>
-          <div className={styles.intro}>Hi, I'm Arpit Pandey</div>
+          <div className={styles.intro}>Hi, I'm <br /><span>Arpit Pandey</span></div>
           <p className={styles.intro_para}>
             I'm a passionate web developer dedicated to building dynamic,
             user-friendly, and responsive websites...

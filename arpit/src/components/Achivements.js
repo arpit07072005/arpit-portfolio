@@ -3,7 +3,7 @@ import styles from '../css/Achivements.module.css'
 function Achivements() {
     return (
         <div className={styles.achivements}>
-            <div className={styles.achivement}>Achivements</div>
+            <div className={styles.achivement}>Achievements</div>
             <div className={styles.container}>
                 <div className={styles.line} >
                     <div className={styles.dot1}></div>
