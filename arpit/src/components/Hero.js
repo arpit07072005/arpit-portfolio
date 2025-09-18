@@ -1,63 +1,119 @@
 import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
-import { loadPolygonPath } from "tsparticles-path-polygon";
+import { loadFull } from "tsparticles"; 
+import { loadPolygonPath, polygonPathName } from "tsparticles-path-polygon";
 import styles from '../css/Hero.module.css';
 
 function Hero() {
-  // यह फंक्शन tsparticles इंजन को शुरू करेगा
   const particlesInit = useCallback(async (engine) => {
-    // पॉलीगॉन पाथ प्लगइन को रजिस्टर करें
+    await loadFull(engine); 
     await loadPolygonPath(engine);
   }, []);
 
-  // पार्टिकल्स के लिए कॉन्फ़िगरेशन ऑब्जेक्ट
- const particlesOptions = {
-    // --- बस यह सेक्शन जोड़ें ---
-    background: {
-      color: {
-        value: '#efc52eff', // डार्क बैकग्राउंड कलर
-      },
-    },
-    // --- बाकी सब कुछ वैसा ही रहेगा ---
-    fpsLimit: 120,
-    particles: {
-       color: {
-      // ▼▼▼ पार्टिकल्स का रंग बदलने के लिए यहाँ बदलाव करें ▼▼▼
-      value: '#0f0e0cff', // <-- यहाँ अपना मनचाहा रंग डालें
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      // ... बाकी का कोड वैसा ही रहेगा
-    },
-    number: {
-      value: 80,
-    },
-    },
-    detectRetina: true,
-  };
+ 
 
   return (
     <div className={styles.container}>
-      {/* Particles Component को बैकग्राउंड में जोड़ा गया है */}
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={particlesOptions}
-        className={styles.particles}
-      />
-      
-      {/* आपका मौजूदा कंटेंट */}
+       <Particles
+      options={{
+        fpsLimit: 60,
+        particles: {
+          color: {
+            value: "#FF0000",
+            animation: {
+              enable: true,
+              speed: 1
+            }
+          },
+          move: {
+            attract: {
+              enable: true,
+              rotate: {
+                distance: 100,
+                x: 2000,
+                y: 2000
+              }
+            },
+            direction: "none",
+            enable: true,
+            outModes: {
+              default: "destroy"
+            },
+            path: {
+              clamp: false,
+              enable: true,
+              delay: {
+                value: 0
+              },
+              generator: polygonPathName,
+              options: {
+                sides: 6,
+                turnSteps: 30,
+                angle: 30
+              }
+            },
+            random: false,
+            speed: 3,
+            straight: false,
+            trail: {
+              fillColor: "#000",
+              length: 20,
+              enable: true
+            }
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800
+            },
+            value: 0
+          },
+          opacity: {
+            value: 1
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            value: 2
+          }
+        },
+        background: {
+          color: "#000"
+        },
+        fullScreen: {
+          zIndex: -1
+        },
+        detectRetina: true,
+        emitters: {
+          direction: "none",
+          rate: {
+            quantity: 1,
+            delay: 0.25
+          },
+          size: {
+            width: 0,
+            height: 0
+          },
+          position: {
+            x: 50,
+            y: 50
+          }
+        }
+      }}
+      init={particlesInit}
+    />
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.intro}>Hi, I'm Arpit Pandey</div>
           <p className={styles.intro_para}>
-            I'm a passionate web developer dedicated to building dynamic, user-friendly, and responsive websites. With a keen eye for design and a strong foundation in modern web technologies, I create seamless digital experiences that bring ideas to life.
+            I'm a passionate web developer dedicated to building dynamic,
+            user-friendly, and responsive websites...
           </p>
         </div>
         <div className={styles.right}>
           <div className={styles.myimg}>
-            <img src="arpitimg.png" alt="Arpit Pandey" />
+            <img src="\app.png" alt="Arpit Pandey" />
           </div>
         </div>
       </div>
