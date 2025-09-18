@@ -1,38 +1,67 @@
-.container{
-    background-color: #121212;
-    height: 100vh;
-    width: 100%;
-    color: aliceblue;
-     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding-left: 10%;
-}
-.intro{
-    font-weight: 600;
-  font-size: 4em;
-}
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-.intro_para{
-     margin-top: 10px;
-  font-size: 1.2em;
-}
-.myimg img{
-  height: 400px;
-  width: 400px;
-  
-}
-.myimg{
-  
-  border: 15px solid red;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
+/* Hero.module.css */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  /* background-color: #0d1117; */ /* <-- इस लाइन को हटा दें */
+}
+
+/* Hero.module.css */
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* इसे वापस 0 कर दें */
+}
+/* कंटेंट को पार्टिकल्स के ऊपर लाने के लिए */
+.content {
+  position: relative; /* या absolute */
+  z-index: 1; /* इसे पार्टिकल्स के ऊपर रखें */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* आपके मौजूदा स्टाइल्स */
+.left {
+  flex: 1;
+  color: #fff;
+  padding-right: 2rem;
+}
+
+.intro {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.intro_para {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #c9d1d9; /* हल्का सफ़ेद रंग */
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myimg img {
+  width: 300px; /* अपनी इमेज का साइज़ एडजस्ट करें */
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFD700; /* इमेज पर सुनहरा बॉर्डर */
 }
