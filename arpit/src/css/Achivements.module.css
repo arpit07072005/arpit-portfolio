@@ -23,8 +23,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 100%;
-  background: rgb(59 130 246);
-  box-shadow: 0 0 20px 2px rgba(59, 130, 246, 0.6);
+  background: gray;
 }
 .cards{
      position: relative;
@@ -34,7 +33,10 @@
   background-color: #1f293780;
   margin-bottom: 2%;
   border-radius: 3%;
-  border: 2px solid rgb(59 130 246);
+ 
+}
+.cards:hover{
+   border: 2px solid rgb(59 130 246);
   box-shadow: 0 0 25px 5px rgba(59, 130, 246, 0.6);
 }
 .left{

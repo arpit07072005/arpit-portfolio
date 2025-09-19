@@ -47,13 +47,14 @@
   box-sizing: border-box;
   transition: transform 0.7s ease, opacity 0.7s ease;
   text-align: left;
-  border: 2px solid rgb(59 130 246);
-  box-shadow: 0 0 10px 5px rgba(59, 130, 246, 0.6);
 }
 
+.front:hover,.back:hover{
+   border: 2px solid rgb(59 130 246);
+  box-shadow: 0 0 25px 5px rgba(59, 130, 246, 0.6);
+}
 .front {
   transform-origin: top;
-  
 }
 .head{
   margin: 3% 0;
@@ -130,6 +131,7 @@ a{
   z-index: 99;
    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
   animation: fadeIn 0.3s ease-in-out;
+  
 }
 .innerpopup{
   width: 700px;
@@ -139,6 +141,8 @@ a{
   padding: 25px;
   border-radius: 12px;
 padding: 1.8%;
+ border: 2px solid rgb(59 130 246);
+  box-shadow: 0 0 25px 5px rgba(59, 130, 246, 0.6);
 }
 .popheading{
   display: flex;
