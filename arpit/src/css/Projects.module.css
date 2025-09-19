@@ -47,6 +47,8 @@
   box-sizing: border-box;
   transition: transform 0.7s ease, opacity 0.7s ease;
   text-align: left;
+  border: 2px solid rgb(59 130 246);
+  box-shadow: 0 0 10px 5px rgba(59, 130, 246, 0.6);
 }
 
 .front {
@@ -70,8 +72,9 @@
   display: flex;
   align-items: center;
   margin-top: 8%;
-  color: rgb(70, 217, 246);
+  color: rgb(59 130 246);
   gap: 1%;
+  font-size: x-large;
 }
 .card:hover .back {
   transform: translateX(0);
