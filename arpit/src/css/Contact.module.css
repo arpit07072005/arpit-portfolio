@@ -63,6 +63,7 @@ textarea{
     justify-content: center;
     gap: 3%;
     color: aliceblue;
+    cursor: pointer;
 }
 .right{
     width:35rem;

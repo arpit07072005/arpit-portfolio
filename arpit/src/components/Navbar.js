@@ -1,10 +1,10 @@
 import React from 'react'
 import {Linkedin,GithubIcon, House, CircleUserRound, BookOpen, Laptop, Send} from 'lucide-react'
-
+import { IoTrophyOutline } from "react-icons/io5";
 import { TbBrandLeetcode } from "react-icons/tb";
 
 import styles from '../css/Navbar.module.css'
-function Navbar( {scrolltoTrigger,scrolltohero,scrolltoskills,scrolltoproject}) {
+function Navbar( {scrolltoTrigger,scrolltohero,scrolltoskills,scrolltoproject,scrolltoachivement}) {
   return (
     <div>
       <div className={styles.container}>
@@ -13,9 +13,9 @@ function Navbar( {scrolltoTrigger,scrolltohero,scrolltoskills,scrolltoproject}) 
         </div>
         <div className={styles.links}>
 <House  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltohero}/>
-<CircleUserRound  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoTrigger}/>
-<BookOpen  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoproject}/>
-<Laptop color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoskills}/>
+<BookOpen  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoskills}/>
+<Laptop color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoproject}/>
+<IoTrophyOutline  color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoachivement}/>
 <Send color='white' size='36px' strokeWidth='1.5px' onClick={scrolltoTrigger} />
         </div>
         <div className={styles.media}>
