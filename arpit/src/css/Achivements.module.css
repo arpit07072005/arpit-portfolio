@@ -96,3 +96,21 @@
 .carddis{
   font-size: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 4%;
+  } 
+  .achivements{
+    padding-left: 0%;
+}
+}
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 0 5%;
+  }
+  .cards {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+}

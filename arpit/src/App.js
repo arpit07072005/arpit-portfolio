@@ -31,7 +31,7 @@ const scrolltoachivement = ()=>{
    achivementref.current?.scrollIntoView({ behavior: 'smooth' });
 }
   return (
-   <>
+<div className="App">
    <Navbar scrolltoTrigger ={scrolltotrigger} scrolltoproject={scrolltoproject} scrolltoskills={scrolltoskills} scrolltohero={scrolltohero} scrolltoachivement={scrolltoachivement}/>
    <div ref={heroref}>
    <Hero/>
@@ -48,7 +48,7 @@ const scrolltoachivement = ()=>{
 <div ref={contactref}>
 <Contact/>
 </div>
-   </>
+   </div>
   );
 }
 

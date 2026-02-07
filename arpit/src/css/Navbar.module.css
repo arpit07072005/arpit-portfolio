@@ -25,3 +25,28 @@
     flex-direction: column;
     gap: 15px; 
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        width: 100%;
+        height: 10vh;
+        top: auto;
+        bottom: 1%;
+        left: 0%;
+        padding: 0 2%;
+    }
+    .links {
+        flex-direction: row;
+        padding: 2% 8%;
+        gap: 8vw;
+        margin: auto;
+    }
+    .media {
+       display: none;
+    }
+    .logo {
+        display: none;
+    }
+    
+}
